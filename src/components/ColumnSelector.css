@@ -1,0 +1,25 @@
+.column-selector {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  
+  .column-selector h4 {
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  

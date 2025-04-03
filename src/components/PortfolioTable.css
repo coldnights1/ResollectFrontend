@@ -1,0 +1,92 @@
+/* Container for the whole portfolio section */
+.portfolio-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f4f6f8;
+}
+
+/* Header row with search and column selector */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Search input styling */
+.search-input {
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Filters (zone, type) section */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Wrapper around the table for horizontal scroll */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table styling */
+.portfolio-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+.portfolio-table th,
+.portfolio-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Table headers */
+.portfolio-table th {
+  background-color: #e9ecef;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* No results row */
+.no-data {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio-header,
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input,
+  .column-dropdown .dropdown-button {
+    width: 100%;
+  }
+
+  .profile-wrapper {
+    margin-right: 0;
+    align-self: flex-end;
+  }
+}
